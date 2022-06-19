@@ -16,14 +16,34 @@ $fa-font-path: "~font-awesome/fonts";
 }
 
 // TODO: Update edx-bootstrap theme to incorporate these edits.
-.btn, a.btn {
+
+a {
+  color: #4054B2 !important;
+}
+
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1204px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.btn,
+a.btn {
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
   }
 }
+
 .btn-link {
   text-decoration: underline;
+  color: #4054B2;
+
   &:hover {
     text-decoration: underline;
   }
@@ -33,7 +53,8 @@ $fa-font-path: "~font-awesome/fonts";
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  & > main {
+
+  &>main {
     flex-grow: 1;
   }
 }
@@ -49,7 +70,7 @@ $fa-font-path: "~font-awesome/fonts";
 
 .coaching-consent {
   .disclaimer {
-    font-size: 	0.75rem;
+    font-size: 0.75rem;
   }
 }
 
